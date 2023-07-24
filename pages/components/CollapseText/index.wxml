@@ -1,0 +1,13 @@
+<!--pages/components/CollapseText/index.wxml-->
+<view class="collapse_comp" wx:if="{{completeText}}">
+  <view class="text_content {{isCalculateDone && isNeedExpand && !isExpand ? 'collapse_box ellipsis-3' : ''}}" catchtap="handleExpand">
+    <!-- 文本内容 -->
+    <text class="text">{{shortText && !isExpand ? shortText : completeText}}</text>
+    <!-- 展开收起按钮 -->
+    <block wx:if="{{isCalculateDone && isNeedExpand}}">
+        <text wx:if="{{!isExpand}}" class="expand" catchtap="handleExpand">展开</text>
+        <text wx:else class="collapse" catchtap="handleCollapse">收起</text>
+    </block>
+  </view>
+  
+</view>

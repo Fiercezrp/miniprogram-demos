@@ -1,0 +1,4 @@
+<view >
+  <view style="font-size: large; font-weight: 700; text-align: center; margin-bottom: 10rpx;">-----多行文本展开/收起展示组件-----</view>
+  <CollapseText class="collapse-text" completeText="{{completeText}}" maxLineNumber="{{2}}"></CollapseText>
+</view>

@@ -1,0 +1,30 @@
+/* pages/components/CollapseText/index.wxss */
+.collapse_comp {
+  padding: 10rpx;
+  background-color: pink;
+}
+.text_content {
+  line-height: 40rpx;
+}
+.text_content .expand,
+.collapse {
+  color: #8df;
+  margin-left: 16rpx;
+}
+.collapse_box {
+  max-height: 120rpx;
+  overflow: hidden;
+}
+.ellipsis-3 {
+  /* 设置为弹性盒子 */
+  display: -webkit-box;
+  /* 表示几行后超出隐藏 */
+  -webkit-line-clamp: 3;
+  /* 超出隐藏 */
+  overflow: hidden;
+  /* 超出显示为省略号 */
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  /* 强制英文单词自动换行 */
+  word-break: break-all;
+}
